@@ -5,11 +5,11 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "liquidplanner"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
-    gem.email = "mchung@gmail.com"
+    gem.summary = %Q{LiquidPlanner API}
+    gem.description = %Q{LiquidPlanner API}
+    gem.email = "someone@liquidplanner.com"
     gem.homepage = "http://github.com/mchung/liquidplanner"
-    gem.authors = ["Marc Chung"]
+    gem.authors = ["Not Marc Chung"]
     gem.add_development_dependency "rspec", ">= 1.2.9"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
