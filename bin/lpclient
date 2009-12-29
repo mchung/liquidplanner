@@ -1,0 +1,34 @@
+#!/usr/bin/env ruby
+#
+# Copyright 2009 LiquidPlanner, Inc.
+#
+
+# 
+# lpclient is a simple interactive shell for use with the LiquidPlanner API.
+#
+# Invoke as:
+#
+#   ./bin/lpclient -d lpclient.yml
+#
+# where lpclient.yml is a YAML file containing lines like:
+#
+# email:    your_email@example.com
+# password: your_password
+#
+# Because it contains your password in plaintext, you should:
+#
+#   chmod 600 lpclient.yml
+#
+# so that this file is readable only by you.
+#
+
+$:.unshift File.join( File.dirname(__FILE__), "..",  "lib" )
+require 'liquidplanner'
+@lp = LiquidPlanner::APIClient.new_from_args( ARGV )
+
+require 'irb'
+require 'irb/completion'
+
+ARGV.clear
+IRB.start
+exit!
