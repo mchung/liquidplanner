@@ -1,6 +1,11 @@
 = liquidplanner
 
-Description goes here.
+Rubygem wrapper for LiquidPlanner API: http://www.liquidplanner.com/api-guide
+
+TODO: 
+- Update licensing information
+- Add cucumber tests
+- OpenSource/Release internal redPear app
 
 == Note on Patches/Pull Requests
  
